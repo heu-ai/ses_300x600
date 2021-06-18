@@ -1,7 +1,7 @@
 // Imported Images in a Array by giving complete url
 var imges = ['img/1.png', 'img/2.png'];
 
-var landing_page = "https://clientefavoritofordsp.com/"
+var landing_page = "https://clientefavoritofordsp.com/?utm_source=NBids&utm_medium=bannerinterativo&utm_campaign=ABRADIF_Junho"
 
 var output = document.getElementById('output');
 
