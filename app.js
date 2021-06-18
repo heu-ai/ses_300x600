@@ -6,6 +6,7 @@ var landing_page = "https://clientefavoritofordsp.com/"
 var output = document.getElementById('output');
 
 openfile(imges[0]);
+//APICall("impression");
 
 // adding Event Listener
 document.getElementById("output").addEventListener('click', function() {
@@ -22,14 +23,53 @@ function openfile(filepath){
 
 // click count but it refreshes again as per page loads
 function APICall(n){
-            //console.log("Clicked Now !!!!!", n);
+  // console.log(n,"no")
+  var x =JSON.stringify({ key:n})
+  fetch('https://demo.infuseads.com:8081/core/key-count/?id=2', {
+    method: 'POST',
+    body: x,
+    headers: {
+      'Content-type':  'application/json; charset=UTF-8'
+    }
+  }).then(function (response) {
+    if (response.ok) {
+      return response.json();
+      // alert("Asd")
+    }
+    return Promise.reject(response);
+  }).then(function (data) {
+    console.log(data);
+  }).catch(function (error) {
+    console.warn('Something went wrong.', error);
+  });
+
 };
 
+window.onload = function(){
+  var x =JSON.stringify({ key:"impression"})
+  fetch('https://demo.infuseads.com:8081/core/key-count/?id=2', {
+    method: 'POST',
+    body: x,
+    headers: {
+      'Content-type':  'application/json; charset=UTF-8'
+    }
+  }).then(function (response) {
+    if (response.ok) {
+      return response.json();
+      // alert("Asd")
+    }
+    return Promise.reject(response);
+  }).then(function (data) {
+    console.log(data,"ddddddddddddddddddddddd");
+  }).catch(function (error) {
+    console.warn('Something went wrong.', error);
+  });
+}
 
 function pg2func(op){
     var knowmore = document.getElementById("knowmore");
     knowmore.style = "position: absolute;top: 710px;left: 513px;height: 65px;background: transparent;width: 220px;border-radius: 2%;border: 1px solid transparent;";
-    knowmore.onclick= function(){APICall(0); window.location.href=landing_page};
+    knowmore.onclick= function(){APICall("page3"); window.location.href=landing_page};
 };
 
 // Clicking of Images
@@ -40,6 +80,7 @@ function clickpattern(){
     if (op.src.search('1.png') > -1)
     {
         op.src = imges[1];
+        APICall("page1");
         pg2func(op);
     }
     else if (op.src.search('2.png') > -1)
@@ -47,8 +88,6 @@ function clickpattern(){
         pg2func(op);
     }
 };
-
-
 
 
 function FindPosition(oElement){
