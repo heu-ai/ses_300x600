@@ -69,7 +69,7 @@ window.onload = function(){
 function pg2func(op){
     var knowmore = document.getElementById("knowmore");
     knowmore.style = "position: absolute;top: 710px;left: 513px;height: 65px;background: transparent;width: 220px;border-radius: 2%;border: 1px solid transparent;";
-    knowmore.onclick= function(){APICall("page3"); window.location.href=landing_page};
+    knowmore.onclick= function(){APICall("page3"); window.open(landing_page)};
 };
 
 // Clicking of Images
