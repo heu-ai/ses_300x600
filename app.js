@@ -227,10 +227,12 @@ function page3func(op){
     phone.required = true;
 
     var year = document.getElementById("year");
-    year.style = "position: absolute;font-size: 15px;top: 391px;left: 24px;height: 23px;background: transparent;width: 266px;border-radius: 2%;border: 1px solid transparent;";
+    year.style = "position: absolute;font-size: 15px;top: 391px;left: 24px;height: 23px;background: transparent; width: 266px;border-radius: 2%;border: 1px solid transparent;";
+    year.onclick = function(){ year.style = "position: absolute;font-size: 15px;top: 391px;left: 24px;height: 23px;background: white; width: 266px;border-radius: 2%;border: 1px solid transparent;";}
 
     var guest = document.getElementById("guest");
-    guest.style = "position: absolute;font-size: 15px;top: 422px;left: 24px;height: 23px;background: transparent;width: 266px;border-radius: 2%;border: 1px solid transparent;";
+    guest.style = "position: absolute;font-size: 15px;top: 422px;left: 24px;height: 23px;background: transparent; width: 266px;border-radius: 2%;border: 1px solid transparent;";
+    guest.onclick = function(){guest.style = "position: absolute;font-size: 15px;top: 422px;left: 24px;height: 23px;background: white; width: 266px;border-radius: 2%;border: 1px solid transparent;";}
 
     var enviar = document.getElementById("enviar");
     enviar.style = "position: absolute;top: 475px;left: 43px;height: 36px;background: transparent;width: 233px;border-radius: 2%;border: 1px solid transparent;";
