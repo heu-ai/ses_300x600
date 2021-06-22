@@ -14,12 +14,32 @@
         .selected{
             border: 1px solid white !important;
         }
+        .btn {
+             transform: skewX(-15deg);
+        }
     </style>
 </head>
 <body>
-    <img id="output" usemap="#myMap" style="position: relative;">
-        <button id="knowmore" style="display:none !important; border:none;"> </button>
-    </img>
+    <div class="container">
+        <img id="output" usemap="#myMap" style="position: relative;">
+            <button id="screen2" style="display:none !important; border:none;"></button>
+            <button id="site" style="display:none !important; border:none;"></button>
+            <button id="screen3" style="display:none !important; border:none;"></button>
+            <button id="left" style="display:none !important; border:none;"></button>
+            <img id="slides" style="display:none !important; border:none;">
+            <button id="right" style="display:none !important; border:none;"></button>
+            <button id="whatsapp" style="display:none !important; border:none;"></button>
+            <button id="back" style="display:none !important; border:none;"></button>
+            <form id="contact_form">
+                    <input type="text" id="name" style="display:none !important; border:none;"/>
+                    <input type="number" id="phone" style="display:none !important; border:none;"/>
+                    <input type="number" id="year" style="display:none !important; border:none;">
+                    <input type="number" id="guest" style="display:none !important; border:none;">
+                <input type="button" id="enviar" style="display:none !important; border:none;"/>
+            </form>
+            <div id="message" style="position: absolute; top: 510px;left: 34px; color:red;font-size: 15px;"></div>
+        </img>
+    </div>
     <map name="myMap" id = "myMap">
     </map>
     <script src="app.js"></script>
