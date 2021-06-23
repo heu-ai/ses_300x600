@@ -219,20 +219,22 @@ function page3func(op){
                                 };
 
     var name = document.getElementById("name");
-    name.style = "position: absolute;font-size: 15px;top: 330px;left: 100px;height: 23px;background: transparent;width: 189px;border-radius: 2%;border: 1px solid transparent;";
+    name.style = "position: absolute;font-size: 15px;top: 330px;left: 24px;height: 23px;background: transparent;width: 266px;border-radius: 2%;border: 1px solid transparent;";
     name.required = true;
+    name.onclick = function(){name.style = "position: absolute;font-size: 15px;top: 330px;left: 24px;height: 23px;background: white;width: 266px;border-radius: 2%;border: 1px solid transparent;";};
 
     var phone = document.getElementById("phone");
-    phone.style = "position: absolute;font-size: 15px;top: 360px;left: 235px;height: 23px;background: transparent;width: 55px;border-radius: 2%;border: 1px solid transparent;";
+    phone.style = "position: absolute;font-size: 15px;top: 360px;left: 24px;height: 23px;background: transparent;width: 266px;border-radius: 2%;border: 1px solid transparent;";
     phone.required = true;
+    phone.onclick = function(){phone.style = "position: absolute;font-size: 15px;top: 360px;left: 24px;height: 23px;background: white;width: 266px;border-radius: 2%;border: 1px solid transparent;";}
 
     var year = document.getElementById("year");
     year.style = "position: absolute;font-size: 15px;top: 391px;left: 24px;height: 23px;background: transparent; width: 266px;border-radius: 2%;border: 1px solid transparent;";
-    year.onclick = function(){ year.style = "position: absolute;font-size: 15px;top: 391px;left: 24px;height: 23px;background: white; width: 266px;border-radius: 2%;border: 1px solid transparent;";}
+    year.onclick = function(){ year.style = "position: absolute;font-size: 15px;top: 391px;left: 24px;height: 23px;background: white; width: 266px;border-radius: 2%;border: 1px solid transparent;";};
 
     var guest = document.getElementById("guest");
     guest.style = "position: absolute;font-size: 15px;top: 422px;left: 24px;height: 23px;background: transparent; width: 266px;border-radius: 2%;border: 1px solid transparent;";
-    guest.onclick = function(){guest.style = "position: absolute;font-size: 15px;top: 422px;left: 24px;height: 23px;background: white; width: 266px;border-radius: 2%;border: 1px solid transparent;";}
+    guest.onclick = function(){guest.style = "position: absolute;font-size: 15px;top: 422px;left: 24px;height: 23px;background: white; width: 266px;border-radius: 2%;border: 1px solid transparent;";};
 
     var enviar = document.getElementById("enviar");
     enviar.style = "position: absolute;top: 475px;left: 43px;height: 36px;background: transparent;width: 233px;border-radius: 2%;border: 1px solid transparent;";
