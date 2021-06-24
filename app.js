@@ -1,5 +1,5 @@
 // Imported Images in a Array by giving complete url
-var imges = ['img/1.png', 'img/2.png', 'img/3.png'];
+var imges = ['img/1.gif', 'img/2.png', 'img/3.png'];
 
 var slides_img = ['img/11.jpg', 'img/12.jpeg', 'img/13.jpg', 'img/14.jpg', 'img/15.jpg', 'img/16.jpg', 'img/17.jpg', 'img/18.jpg', 'img/19.jpeg', 'img/20.jpg'];
 
@@ -259,7 +259,7 @@ function clickpattern(){
     var op = document.getElementById('output');
     op.onmousedown = GetCoordinates;
 
-    if (op.src.search('1.png') > -1)
+    if (op.src.search('1.gif') > -1)
     {
         page1func(op);
     }
