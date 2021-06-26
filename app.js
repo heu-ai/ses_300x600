@@ -14,7 +14,7 @@ var receivers = "leadnbids@gmail.com, analytics@infuseads.com"
 
 
 var output = document.getElementById('output');
-let contact_info = {"name":"", "phone_no":"", "year":"", "guest":"", "subject":subject, "receivers":receivers};
+let contact_info = {"name":"", "phone_no":"", "year":"", "number_of_guests":"", "subject":subject, "receivers":receivers};
 
 // Opening the 1st Image
 openfile(imges[0]);
