@@ -246,7 +246,7 @@ function page3func(op){
                                     contact_info.name= name.value;
                                     contact_info.phone_no=phone.value;
                                     contact_info.year=year.value;
-                                    contact_info.guest=guest.value;
+                                    contact_info.number_of_guests=guest.value;
                                     APIDataCall(contact_info);
                                     document.getElementById("message").innerHTML = "Obrigado, entraremos em contato em breve!";
                                  };
