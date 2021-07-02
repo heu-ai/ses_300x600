@@ -129,8 +129,9 @@ function page1func(op){
     screen3.style = "position: absolute; top: 545px; left: 36px; height: 34px; background: transparent; width: 232px; border-radius: 2%; border:1px solid transparent;";
     screen3.onclick= function(){
                                     APICall("page2leftkey2");
-                                    op.src = imges[2];
-                                    page3func(op);
+                                    window.open(whatsapp_link);
+//                                    op.src = imges[2];
+//                                    page3func(op);
                                 };
 };
 
@@ -182,76 +183,77 @@ function page2func(op){
     screen3.style = "position: absolute;top: 544px;left: 36px;height: 34px;background: transparent;width: 232px;border-radius: 2%;border: 1px solid transparent;";
     screen3.onclick= function(){
                                     APICall("page2rightkey3");
-                                    op.src = imges[2];
-                                    page3func(op);
+                                    window.open(whatsapp_link);
+//                                    op.src = imges[2];
+//                                    page3func(op);
                                 };
 };
 
 
 //page 3
-function page3func(op){
-    document.getElementById("screen2").style = "display:none !important";
-    document.getElementById("site").style = "display:none !important";
-    document.getElementById("screen3").style = "display:none !important";
-    document.getElementById("slides").style = "display:none !important";
-    document.getElementById("left").style = "display:none !important";
-    document.getElementById("right").style = "display:none !important";
-    document.getElementById("contact_form").style = "";
-    document.getElementById("contact_form").disabled = false;
-    document.getElementById("name").disabled = false;
-    document.getElementById("phone").disabled = false;
-    document.getElementById("year").disabled = false;
-    document.getElementById("guest").disabled = false;
-    document.getElementById("enviar").disabled = false;
-
-    var whatsapp = document.getElementById("whatsapp");
-    whatsapp.style = "position: absolute;top: 192px;left: 37px;height: 35px;background: transparent;width: 234px;border-radius: 2%;border: 1px solid transparent;";
-    whatsapp.onclick= function(){
-                                    APICall("page3");
-                                    window.open(whatsapp_link);
-                                    };
-
-    var back = document.getElementById("back");
-    back.style = "position: absolute;top: 530px;left: 43px;height: 36px;background: transparent;width: 233px;border-radius: 2%;border: 1px solid transparent;";
-    back.onclick= function(){       APICall("page4");
-                                    op.src = imges[1];
-                                    page2func(op);
-                                };
-
-    var name = document.getElementById("name");
-    name.style = "position: absolute;font-size: 15px;top: 330px;left: 24px;height: 23px;background: transparent;width: 266px;border-radius: 2%;border: 1px solid transparent;";
-    name.required = true;
-    name.onclick = function(){name.style = "position: absolute;font-size: 15px;top: 330px;left: 24px;height: 23px;background: white;width: 266px;border-radius: 2%;border: 1px solid transparent;";};
-
-    var phone = document.getElementById("phone");
-    phone.style = "position: absolute;font-size: 15px;top: 360px;left: 24px;height: 23px;background: transparent;width: 266px;border-radius: 2%;border: 1px solid transparent;";
-    phone.required = true;
-    phone.onclick = function(){phone.style = "position: absolute;font-size: 15px;top: 360px;left: 24px;height: 23px;background: white;width: 266px;border-radius: 2%;border: 1px solid transparent;";}
-
-    var year = document.getElementById("year");
-    year.style = "position: absolute;font-size: 15px;top: 391px;left: 24px;height: 23px;background: transparent; width: 266px;border-radius: 2%;border: 1px solid transparent;";
-    year.onclick = function(){ year.style = "position: absolute;font-size: 15px;top: 391px;left: 24px;height: 23px;background: white; width: 266px;border-radius: 2%;border: 1px solid transparent;";};
-
-    var guest = document.getElementById("guest");
-    guest.style = "position: absolute;font-size: 15px;top: 422px;left: 24px;height: 23px;background: transparent; width: 266px;border-radius: 2%;border: 1px solid transparent;";
-    guest.onclick = function(){guest.style = "position: absolute;font-size: 15px;top: 422px;left: 24px;height: 23px;background: white; width: 266px;border-radius: 2%;border: 1px solid transparent;";};
-
-    var enviar = document.getElementById("enviar");
-    enviar.style = "position: absolute;top: 475px;left: 43px;height: 36px;background: transparent;width: 233px;border-radius: 2%;border: 1px solid transparent;";
-    enviar.onclick= function(){
-                                name.required = true;
-                                phone.required = true;
-                                if(name.value!="" && phone.value!=""){
-                                    document.getElementById("contact_form").submit();
-                                    contact_info.name= name.value;
-                                    contact_info.phone_no=phone.value;
-                                    contact_info.year=year.value;
-                                    contact_info.number_of_guests=guest.value;
-                                    APIDataCall(contact_info);
-                                    document.getElementById("message").innerHTML = "Obrigado, entraremos em contato em breve!";
-                                 };
-                            };
-};
+//function page3func(op){
+//    document.getElementById("screen2").style = "display:none !important";
+//    document.getElementById("site").style = "display:none !important";
+//    document.getElementById("screen3").style = "display:none !important";
+//    document.getElementById("slides").style = "display:none !important";
+//    document.getElementById("left").style = "display:none !important";
+//    document.getElementById("right").style = "display:none !important";
+//    document.getElementById("contact_form").style = "";
+//    document.getElementById("contact_form").disabled = false;
+//    document.getElementById("name").disabled = false;
+//    document.getElementById("phone").disabled = false;
+//    document.getElementById("year").disabled = false;
+//    document.getElementById("guest").disabled = false;
+//    document.getElementById("enviar").disabled = false;
+//
+//    var whatsapp = document.getElementById("whatsapp");
+//    whatsapp.style = "position: absolute;top: 192px;left: 37px;height: 35px;background: transparent;width: 234px;border-radius: 2%;border: 1px solid transparent;";
+//    whatsapp.onclick= function(){
+//                                    APICall("page3");
+//                                    window.open(whatsapp_link);
+//                                    };
+//
+//    var back = document.getElementById("back");
+//    back.style = "position: absolute;top: 530px;left: 43px;height: 36px;background: transparent;width: 233px;border-radius: 2%;border: 1px solid transparent;";
+//    back.onclick= function(){       APICall("page4");
+//                                    op.src = imges[1];
+//                                    page2func(op);
+//                                };
+//
+//    var name = document.getElementById("name");
+//    name.style = "position: absolute;font-size: 15px;top: 330px;left: 24px;height: 23px;background: transparent;width: 266px;border-radius: 2%;border: 1px solid transparent;";
+//    name.required = true;
+//    name.onclick = function(){name.style = "position: absolute;font-size: 15px;top: 330px;left: 24px;height: 23px;background: white;width: 266px;border-radius: 2%;border: 1px solid transparent;";};
+//
+//    var phone = document.getElementById("phone");
+//    phone.style = "position: absolute;font-size: 15px;top: 360px;left: 24px;height: 23px;background: transparent;width: 266px;border-radius: 2%;border: 1px solid transparent;";
+//    phone.required = true;
+//    phone.onclick = function(){phone.style = "position: absolute;font-size: 15px;top: 360px;left: 24px;height: 23px;background: white;width: 266px;border-radius: 2%;border: 1px solid transparent;";}
+//
+//    var year = document.getElementById("year");
+//    year.style = "position: absolute;font-size: 15px;top: 391px;left: 24px;height: 23px;background: transparent; width: 266px;border-radius: 2%;border: 1px solid transparent;";
+//    year.onclick = function(){ year.style = "position: absolute;font-size: 15px;top: 391px;left: 24px;height: 23px;background: white; width: 266px;border-radius: 2%;border: 1px solid transparent;";};
+//
+//    var guest = document.getElementById("guest");
+//    guest.style = "position: absolute;font-size: 15px;top: 422px;left: 24px;height: 23px;background: transparent; width: 266px;border-radius: 2%;border: 1px solid transparent;";
+//    guest.onclick = function(){guest.style = "position: absolute;font-size: 15px;top: 422px;left: 24px;height: 23px;background: white; width: 266px;border-radius: 2%;border: 1px solid transparent;";};
+//
+//    var enviar = document.getElementById("enviar");
+//    enviar.style = "position: absolute;top: 475px;left: 43px;height: 36px;background: transparent;width: 233px;border-radius: 2%;border: 1px solid transparent;";
+//    enviar.onclick= function(){
+//                                name.required = true;
+//                                phone.required = true;
+//                                if(name.value!="" && phone.value!=""){
+//                                    document.getElementById("contact_form").submit();
+//                                    contact_info.name= name.value;
+//                                    contact_info.phone_no=phone.value;
+//                                    contact_info.year=year.value;
+//                                    contact_info.number_of_guests=guest.value;
+//                                    APIDataCall(contact_info);
+//                                    document.getElementById("message").innerHTML = "Obrigado, entraremos em contato em breve!";
+//                                 };
+//                            };
+//};
 
 
 // Clicking of Images
