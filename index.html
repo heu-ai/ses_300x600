@@ -28,32 +28,28 @@
         input[type=number] {
           -moz-appearance: textfield;
         }
+        input[type=checkbox] {
 
+         -ms-transform: scale(2); /* IE */
+         -moz-transform: scale(2); /* FF */
+         -webkit-transform: scale(2); /* Safari and Chrome */
+         -o-transform: scale(2); /* Opera */
+          padding: 10px;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <img id="output" usemap="#myMap" style="position: relative;">
-            <button id="screen2" style="display:none !important; border:none;"></button>
-            <button id="site" style="display:none !important; border:none;"></button>
-            <button id="screen3" style="display:none !important; border:none;"></button>
-            <button id="left" style="display:none !important; border:none;"></button>
-            <img id="slides" style="display:none !important; border:none;">
-            <button id="right" style="display:none !important; border:none;"></button>
-            <button id="whatsapp" style="display:none !important; border:none;"></button>
-            <button id="back" style="display:none !important; border:none;"></button>
-            <form id="contact_form">
-                    <input type="text" id="name" style="display:none !important; border:none;"/>
-                    <input type="number" id="phone" style="display:none !important; border:none;"/>
-                    <input type="number" id="year" style="display:none !important; border:none;">
-                    <input type="number" id="guest" style="display:none !important; border:none;">
+    <img id="output" style="position: relative;">
+        <button id="homepage" style="display:none !important; border:none;"></button>
+        <button id="screen2" style="display:none !important; border:none;"></button>
+        <form id="contact_form">
+                <input type="text" id="name" style="display:none !important; border:none;"/>
+                <input type="email" id="email" style="display:none !important; border:none;"/>
+                <input type="number" id="phone" style="display:none !important; border:none;"/>
+                <input type="checkbox" id="privacypolicy" style="display:none !important; border:none;"/>
                 <input type="button" id="enviar" style="display:none !important; border:none;"/>
-            </form>
-            <div id="message" style="position: absolute; top: 510px;left: 34px; color:red;font-size: 15px;"></div>
-        </img>
-    </div>
-    <map name="myMap" id = "myMap">
-    </map>
+        </form>
+    </img>
     <script src="app.js"></script>
 </body>
 </html>
